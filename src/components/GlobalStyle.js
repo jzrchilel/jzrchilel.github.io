@@ -14,7 +14,6 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: 'Roboto Mono', monospace;
     word-break: break-word;
     background-color:  #282c35;
     color: #fff;
@@ -25,19 +24,4 @@ export default createGlobalStyle`
     margin: 0.5em 0;
     color: #fff;
   }
-
-  ul {
-    padding: 0;
-    list-style: square;
-  }
-
-  a {
-    text-decoration: none;
-    color: #ffb142;
-    &:hover {
-      color: #ccae62;
-      border-color: #ccae62;
-    }
-  }
-
 `
