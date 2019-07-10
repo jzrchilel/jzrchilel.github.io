@@ -1,9 +1,7 @@
 import React from 'react'
-import { css } from '@emotion/core'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { rhythm } from '../utils/typography'
 import Favicon from '../components/FavIcon'
 import GlobalStyle from '../components/GlobalStyle'
 
@@ -11,6 +9,7 @@ const TitleLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   border: none;
+  outline: none;
 
   &:hover {
     color: #aaa69d;
@@ -20,6 +19,17 @@ const TitleLink = styled(Link)`
   font-weight: bolder;
   font-size: 1.2em;
 `;
+
+const StyledLayout = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2.88rem;
+  padding-top: 2.16rem;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    padding: 40px;
+  }
+`
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -35,14 +45,7 @@ export default ({ children }) => {
   )
 
   return (
-    <div
-      css={css`
-        margin: 0 auto;
-        max-width: 700px;
-        padding: ${rhythm(2)};
-        padding-top: ${rhythm(1.5)};
-      `}
-    >
+    <StyledLayout>
       <Helmet>
         <title>Jezer Chilel</title>
         <meta property="og:title" content="Jezer Chilel" />
@@ -61,7 +64,7 @@ export default ({ children }) => {
         justifyContent: 'space-between'
       }}>
         <TitleLink to="/">
-          <img src="/favicon-32x32.png"></img>
+          <img src="/favicon-32x32.png" alt="Jezer Logo"></img>
           {data.site.siteMetadata.title}
         </TitleLink>
         <Link
@@ -71,6 +74,6 @@ export default ({ children }) => {
         </Link>
       </div>
       {children}
-    </div>
+    </StyledLayout>
   )
 }

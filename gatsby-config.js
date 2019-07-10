@@ -10,6 +10,7 @@ module.exports = {
         path: `${__dirname}/src/pages/`
       }
     },
+    `gatsby-plugin-layout`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,

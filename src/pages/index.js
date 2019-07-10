@@ -1,8 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout'
 
 export default () => (
-  <Layout>
+  <>
     <p>
       Hi, I’m Jezer, a Software Developer currently living in Guadalajara, Mexico. 
       Part of <a href="https://www.epam.com/">Epam Systems</a> team.
@@ -30,11 +29,15 @@ export default () => (
     </ul>
     <p>
       You can find me on {' '}
-      <a href="https://twitter.com/isaac_jzr" target="_blank">Twitter</a>,{' '}
-      <a href="https://github.com/jzrchilel" target="_blank">Github</a>,{' '}
-      <a href="https://www.linkedin.com/in/jezer-chilel/" target="_blank">Linkedin</a>,{' '}
-      <a href="https://stackoverflow.com/users/2946824/jezer?tab=profile" target="_blank">Stack Overflow</a> {' '}
-      or reach me via <a href="mailto:jezer.chilel@gmail.com" target="_blank">email</a>.
+      <a href="https://twitter.com/isaac_jzr" target="_blank" rel="noopener noreferrer">Twitter</a>,{' '}
+      <a href="https://github.com/jzrchilel" target="_blank" rel="noopener noreferrer">Github</a>,{' '}
+      <a href="https://www.linkedin.com/in/jezer-chilel/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>,{' '}
+      <a href="https://stackoverflow.com/users/2946824/jezer?tab=profile" target="_blank" rel="noopener noreferrer">
+        Stack Overflow
+      </a> {' '}
+      or reach me via <a href="mailto:jezer.chilel@gmail.com" target="_blank" rel="noopener noreferrer">email</a>.
     </p>
-  </Layout>
+  </>
 )
