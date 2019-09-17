@@ -46,6 +46,7 @@ export default () => (
         Reading <TextCurly>"Agile Software Development, Principles, Patterns, and Practices - Robert C. Martin"</TextCurly>
       </StyledItem>
       <StyledItem>Remembering Java and catching up with the new features.</StyledItem>
+      <StyledItem>Learning to play clarinet</StyledItem>
     </StyledList>
     <p>
       You can find me on {' '}
