@@ -15,7 +15,7 @@ export default createGlobalStyle`
 
   body {
     word-break: break-word;
-    background-color:  #282c35;
+    background-color: #282c35;
     color: #fff;
   }
 

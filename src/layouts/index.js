@@ -22,13 +22,24 @@ const TitleLink = styled(Link)`
 
 const StyledLayout = styled.div`
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 900px;
   padding: 2.88rem;
   padding-top: 2.16rem;
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     padding: 40px;
   }
+`
+
+const StyledLink = styled(Link)`
+  color: #ffb142;
+  outline: none;
+`
+
+const CopyRight = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
 `
 
 export default ({ children }) => {
@@ -67,13 +78,14 @@ export default ({ children }) => {
           <img src="/favicon-32x32.png" alt="Jezer Logo"></img>
           {data.site.siteMetadata.title}
         </TitleLink>
-        <Link
-          to="/blog/"
-        >
+        <StyledLink to="/blog/">
           blog
-        </Link>
+        </StyledLink>
       </div>
       {children}
+      <CopyRight>
+        &copy; {new Date().getFullYear()} Jezer Chilel 
+      </CopyRight>
     </StyledLayout>
   )
 }
